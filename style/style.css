@@ -49,7 +49,7 @@ h1 span, h2 span {
 }
 
 h3 {
-  color: #282828;
+  color: #fff;
   font-size: 1.75em;
   font-weight: 700;
 }
@@ -261,4 +261,16 @@ p {
 }
 .demand-container .demand__right {
   width: calc(50% - 15px);
+}
+
+.about {
+  background-image: url("../assets/bg/about-bg.png");
+  background-size: cover;
+  margin-top: 150px;
+  padding: 120px 0;
+}
+.about h3 {
+  margin: auto;
+  width: 90%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
