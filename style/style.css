@@ -71,6 +71,19 @@ p {
   font-size: 1em;
 }
 
+.btn {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 38px 30px;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background: #e4131d;
+  border-radius: 10px;
+}
+
 .hero {
   margin-top: 85px;
 }
@@ -305,4 +318,57 @@ p {
   margin-top: 70px;
   max-width: 550px;
   max-height: 330px;
+}
+
+.cooperation {
+  display: block;
+  background: #f4f4f4;
+  margin-top: 220px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.cooperation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.cooperation-container .cooperation__steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 260px 400px 340px;
+  gap: 24px;
+  grid-template-areas: "a b" "a c" "d e";
+}
+.cooperation-container .cooperation__steps .cooperation__step {
+  position: relative;
+  display: grid;
+  justify-content: start;
+  align-content: start;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 60px 16px 0 20px;
+}
+.cooperation-container .cooperation__steps .cooperation__step:first-child {
+  overflow: hidden;
+  grid-area: a;
+}
+.cooperation-container .cooperation__steps .cooperation__step:first-child img {
+  width: 268px;
+  height: 268px;
+  position: absolute;
+  bottom: -80px;
+  right: -24px;
+}
+.cooperation-container .cooperation__steps .cooperation__step h4 {
+  display: inline;
+  margin-bottom: 33px;
+}
+.cooperation-container .cooperation__steps .cooperation__step p {
+  font-size: 0.9em;
+}
+.cooperation-container .cooperation__steps .cooperation__step .btn {
+  margin-top: 35px;
 }/*# sourceMappingURL=style.css.map */

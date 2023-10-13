@@ -1,0 +1,54 @@
+.cooperation {
+      display: block;
+      background: #f4f4f4;
+      margin-top: 220px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+}
+.cooperation-container {
+      @include flex(column, $gap: 70px);
+
+      .cooperation__steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 260px 400px 340px;
+            gap: 24px;
+            grid-template-areas:
+                  "a b"
+                  "a c"
+                  "d e";
+
+            .cooperation__step {
+                  position: relative;
+                  display: grid;
+                  justify-content: start;
+                  align-content: start;
+                  border-radius: 20px;
+                  background-color: #ffffff;
+                  padding: 60px 16px 0 20px;
+                  
+                  &:first-child {
+                        overflow: hidden;
+                        grid-area: a;
+
+                        img{
+                              width: 268px;
+                              height: 268px;
+                              position: absolute;
+                              bottom: -80px;
+                              right: -24px;
+                        }
+                  }
+                  h4{
+                        display: inline;
+                        margin-bottom: 33px;
+                  }
+                  p{
+                        font-size: 0.9em;
+                  }
+                  .btn{
+                        margin-top: 35px;
+                  }
+            }
+      }
+}
