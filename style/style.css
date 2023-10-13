@@ -371,4 +371,20 @@ p {
 }
 .cooperation-container .cooperation__steps .cooperation__step .btn {
   margin-top: 35px;
+}
+
+.neural-network {
+  margin-top: 130px;
+}
+
+.neural-network-container {
+  padding: 150px 0 160px 70px;
+  border-radius: 20px;
+  background-color: rgb(244, 244, 244);
+  background-image: url("../assets/bg/neural-network-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.neural-network-container h2 {
+  max-width: 740px;
 }/*# sourceMappingURL=style.css.map */
