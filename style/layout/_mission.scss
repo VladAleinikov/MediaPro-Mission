@@ -1,0 +1,19 @@
+.mission {
+      margin-top: 180px;
+      padding-bottom: 220px;
+      overflow: hidden;
+}
+.mission-container {
+      position: relative;
+      .mission__content {
+            @include flex(column, start, start, 60px);
+            max-width: 740px;
+      }
+      .mission__img {
+            position: absolute;
+            top: 0;
+            right: -330px;
+            width: 780px;
+            height: 642px;
+      }
+}
