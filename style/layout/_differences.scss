@@ -1,0 +1,39 @@
+.differences {
+      margin-top: 180px;
+      background-image: url("../assets/bg/differences-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.differences-container {
+      @include flex();
+      padding-top: 180px;
+      padding-bottom: 160px;
+
+      h2,
+      li,
+      b {
+            color: #fff;
+      }
+      h2 {
+            width: 50%;
+      }
+      .differences__list {
+            @include flex(column, start, start, 30px);
+
+            .differences__item {
+                  position: relative;
+                  padding-left: 15px;
+
+                  &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        top: 10px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 100%;
+                        background: #e4131d;
+                  }
+            }
+      }
+}

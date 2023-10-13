@@ -78,7 +78,7 @@ p {
 .hero-container {
   padding: 0 80px;
   max-width: 1440px;
-  background-image: url("../assets/hero/hero-bg.png");
+  background-image: url("../assets/bg/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -160,4 +160,50 @@ p {
   width: 22px;
   height: 8px;
   margin-left: 12px;
+}
+
+.differences {
+  margin-top: 180px;
+  background-image: url("../assets/bg/differences-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.differences-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+  padding-top: 180px;
+  padding-bottom: 160px;
+}
+.differences-container h2,
+.differences-container li,
+.differences-container b {
+  color: #fff;
+}
+.differences-container h2 {
+  width: 50%;
+}
+.differences-container .differences__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+.differences-container .differences__list .differences__item {
+  position: relative;
+  padding-left: 15px;
+}
+.differences-container .differences__list .differences__item:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #e4131d;
 }/*# sourceMappingURL=style.css.map */
