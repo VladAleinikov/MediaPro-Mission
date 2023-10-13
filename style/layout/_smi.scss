@@ -2,7 +2,7 @@
       @include flex(column, $align: start, $gap: 70px);
 
       .smi__list {
-            @include flex(row, space-between, start, 20px);
+            @include flex(row, center, start, 20px);
             flex-wrap: wrap;
 
             .smi__item {
@@ -27,5 +27,11 @@
                         }
                   }
             }
+      }
+}
+
+@media (max-width: 768px) {
+      .smi-container {
+            gap: 40px;
       }
 }

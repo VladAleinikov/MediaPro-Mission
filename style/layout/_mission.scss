@@ -12,8 +12,21 @@
       .mission__img {
             position: absolute;
             top: 0;
-            right: -330px;
+            left: 740px;
             width: 780px;
             height: 642px;
+      }
+}
+
+@media (max-width: 768px) {
+      .mission {
+            margin-top: 80px;
+            padding-bottom: 80px;
+      }
+      .mission-container {
+            position: relative;
+            .mission__content {
+                  gap: 30px;
+            }
       }
 }

@@ -5,7 +5,8 @@
       background-size: cover;
 }
 .differences-container {
-      @include flex();
+      @include flex($just: start, $gap: 30px);
+      flex-wrap: wrap;
       padding-top: 180px;
       padding-bottom: 160px;
 
@@ -15,7 +16,7 @@
             color: #fff;
       }
       h2 {
-            width: 50%;
+            width: 540px;
       }
       .differences__list {
             @include flex(column, start, start, 30px);
@@ -34,6 +35,20 @@
                         border-radius: 100%;
                         background: #e4131d;
                   }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .differences {
+            margin-top: 80px;
+      }
+      .differences-container {
+            padding-top: 80px;
+            padding-bottom: 70px;
+
+            .differences__list {
+                  @include flex(column, start, start, 15px);
             }
       }
 }

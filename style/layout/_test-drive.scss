@@ -18,22 +18,47 @@
             text-align: center;
       }
       .test-drive__form {
-            @include flex($gap:20px);
+            width: 100%;
+            @include flex($gap: 20px);
             flex-wrap: wrap;
-            
+
             input {
                   border-radius: 10px;
                   background-color: #7e8082;
-                  width: 323px;
+                  max-width: 300px;
+                  width: 100%;
                   height: 77px;
                   font-size: 0.9em;
                   text-align: center;
                   color: #fff;
             }
-            .btn{
-                  width: 323px;
+            .btn {
+                  max-width: 300px;
+                  width: 100%;
                   height: 77px;
                   padding: unset;
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .test-drive {
+            margin-top: 100px;
+            padding-top: 70px;
+            padding-bottom: 80px;
+      }
+      .test-drive-container {
+            gap: 30px;
+
+            .test-drive__form {
+                  input {
+                        max-width: 200px;
+                        height: 60px;
+                  }
+                  .btn {
+                        max-width: 200px;
+                        height: 60px;
+                  }
             }
       }
 }
