@@ -1,0 +1,41 @@
+.demand {
+      margin-top: 170px;
+}
+.demand-container {
+      @include flex(row, space-between, start);
+      flex-wrap: wrap;
+
+      h2 {
+            display: block;
+            width: 100%;
+            font-size: 2em;
+            margin-bottom: 80px;
+      }
+      .demand__left {
+            @include flex(column, $align: start, $gap: 30px);
+            width: calc(50% - 15px);
+
+            .left__social {
+                  @include flex($gap: 9px);
+
+                  .social__item {
+                        @include flex();
+                        width: 69px;
+                        height: 69px;
+                        border-radius: 10px;
+                        background-color: #282828;
+
+                        &:first-child{
+                              align-items: end;
+                        }
+                        img{
+                              width: unset;
+                              height: unset;
+                        }
+                  }
+            }
+      }
+      .demand__right {
+            width: calc(50% - 15px);
+      }
+}
