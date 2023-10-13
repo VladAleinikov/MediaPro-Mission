@@ -1,0 +1,21 @@
+.hero{
+      margin-top: 85px;
+}
+.hero-container{
+      padding: 0 80px;
+      max-width: 1440px;
+      background-image: url("../assets/hero/hero-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .hero__content{
+            @include flex($dir: column, $gap: 75px);
+            padding-top: 140px;
+            padding-bottom: 130px;
+            max-width: 740px;
+
+            h1, p, b{
+                  color: #fff;
+            }
+      }
+}
