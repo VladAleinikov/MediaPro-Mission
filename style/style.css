@@ -119,4 +119,45 @@ p {
   right: -330px;
   width: 780px;
   height: 642px;
+}
+
+.smi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 70px;
+}
+.smi-container .smi__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.smi-container .smi__list .smi__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 195px;
+  height: 90px;
+}
+.smi-container .smi__list .smi__item .item__img {
+  width: unset;
+  height: unset;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+.smi-container .smi__list .smi__item a {
+  font-size: 0.9em;
+  color: #282828;
+}
+.smi-container .smi__list .smi__item a img {
+  width: 22px;
+  height: 8px;
+  margin-left: 12px;
 }/*# sourceMappingURL=style.css.map */

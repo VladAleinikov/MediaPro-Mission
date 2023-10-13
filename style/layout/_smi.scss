@@ -1,0 +1,31 @@
+.smi-container {
+      @include flex(column, $align: start, $gap: 70px);
+
+      .smi__list {
+            @include flex(row, space-between, start, 20px);
+            flex-wrap: wrap;
+
+            .smi__item {
+                  @include flex(row, start, end, 12px);
+                  flex-wrap: wrap;
+
+                  width: 195px;
+                  height: 90px;
+
+                  .item__img {
+                        width: unset;
+                        height: unset;
+                        object-fit: unset;
+                  }
+                  a {
+                        font-size: 0.9em;
+                        color: #282828;
+                        img {
+                              width: 22px;
+                              height: 8px;
+                              margin-left: 12px;
+                        }
+                  }
+            }
+      }
+}
