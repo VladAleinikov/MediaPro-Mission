@@ -276,7 +276,7 @@ p {
 }
 
 .about {
-  background-image: url("../assets/bg/about-bg.png");
+  background-image: url("../assets/bg/noise-bg.png");
   background-size: cover;
   margin-top: 150px;
   padding: 120px 0;
@@ -386,4 +386,51 @@ p {
 }
 .neural-network-container h2 {
   max-width: 740px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.test-drive {
+  margin-top: 210px;
+  background-image: url("../assets/bg/noise-bg.png");
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.test-drive-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.test-drive-container h2 {
+  font-size: 2.25em;
+  max-width: 880px;
+}
+.test-drive-container h2,
+.test-drive-container p {
+  color: #fff;
+  text-align: center;
+}
+.test-drive-container .test-drive__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.test-drive-container .test-drive__form input {
+  border-radius: 10px;
+  background-color: #7e8082;
+  width: 323px;
+  height: 77px;
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+}
+.test-drive-container .test-drive__form .btn {
+  width: 323px;
+  height: 77px;
+  padding: unset;
+}/*# sourceMappingURL=main.css.map */

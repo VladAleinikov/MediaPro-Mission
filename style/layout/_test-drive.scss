@@ -1,0 +1,39 @@
+.test-drive {
+      margin-top: 210px;
+      background-image: url("../assets/bg/noise-bg.png");
+      background-size: cover;
+      padding-top: 120px;
+      padding-bottom: 130px;
+}
+.test-drive-container {
+      @include flex(column, $gap: 55px);
+
+      h2 {
+            font-size: 2.25em;
+            max-width: 880px;
+      }
+      h2,
+      p {
+            color: #fff;
+            text-align: center;
+      }
+      .test-drive__form {
+            @include flex($gap:20px);
+            flex-wrap: wrap;
+            
+            input {
+                  border-radius: 10px;
+                  background-color: #7e8082;
+                  width: 323px;
+                  height: 77px;
+                  font-size: 0.9em;
+                  text-align: center;
+                  color: #fff;
+            }
+            .btn{
+                  width: 323px;
+                  height: 77px;
+                  padding: unset;
+            }
+      }
+}
