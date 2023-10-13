@@ -1,0 +1,24 @@
+.diagramm {
+      display: block;
+      margin-top: 180px;
+}
+.diagramm-container {
+      @include flex(column, $gap: 50px);
+
+      h2 {
+            text-align: center;
+      }
+      .diagramm__graphic {
+            @include flex();
+            border-radius: 20px;
+            background-color: #2b2930;
+            width: 100%;
+            height: 631px;
+
+            img{
+                  margin-top: 70px;
+                  max-width: 550px;
+                  max-height: 330px;
+            }
+      }
+}
