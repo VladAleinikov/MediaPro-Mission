@@ -1,335 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Миссия и ценности</title>
-    <link rel="stylesheet" href="./style/main.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div class="hero-container container">
-          <article class="hero__content">
-            <h1>Миссия и ценности Media<span>Pro</span></h1>
-            <p>
-              <b>Быть частью MediaPro значит иметь схожие идеи:</b><br /><br />
 
-              Руководствоваться одними же принципами, идти к одним целям и
-              развиваться в соответствии с ценностями MediaPro.<br /><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Миссия и ценности</title>
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<?php
+if (isset($_POST["email"]) && isset($_POST["tel"])) {
+  $to = "Ваша почта на которую придет письмо";
+  $subject = "Форма пользователя";
+  $message = "Email - " . $_POST["email"] . " \nТелефон - " . $_POST["tel"];
+  mail($to, $subject, $message);
+}
+?>
 
-              Здесь ты найдешь ключевые моменты, которые помогут
-              синхронизироватся и стать частью MediaPro.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="mission">
-        <div class="mission-container container">
-          <article class="mission__content">
-            <h2>Миссия Media<span>Pro</span></h2>
-            <p>
-              Научить каждого партнера мыслить и действовать в соответствии с
-              едиными ценностями и глобальной целью компании.<br /><br />
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-container container">
+        <article class="hero__content">
+          <h1>Миссия и ценности Media<span>Pro</span></h1>
+          <p>
+            <b>Быть частью MediaPro значит иметь схожие идеи:</b><br /><br />
 
-              Целью мы ставим становление нас, неукоснительным стандартом
-              индустрии лидогенерации, для того чтобы каждый предприниматель мог
-              пользоваться нашими IT-сервисами. Если наше мышление будет едино,
-              это приведет к отличным результатам, компания будет расти и
-              процветать.<br /><br />
+            Руководствоваться одними же принципами, идти к одним целям и
+            развиваться в соответствии с ценностями MediaPro.<br /><br />
 
-              Эти ценности и принципы нужны не для формальности. <br />
-              Это абсолютно применимые инструменты в ежедневной работе.
-              <br /><br />
+            Здесь ты найдешь ключевые моменты, которые помогут
+            синхронизироватся и стать частью MediaPro.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="mission-container container">
+        <article class="mission__content">
+          <h2>Миссия Media<span>Pro</span></h2>
+          <p>
+            Научить каждого партнера мыслить и действовать в соответствии с
+            едиными ценностями и глобальной целью компании.<br /><br />
 
-              В рамках каждой задачи Вы можете подбирать какой-то принцип,
-              который поможет вам работать продуктивнее.
-            </p>
-          </article>
-          <img
-            src="./assets/mission/hand.png"
-            alt="hand"
-            class="mission__img"
-          />
-        </div>
-      </section>
-      <section class="smi">
-        <div class="smi-container container">
-          <h2><span>СМИ</span> о нас</h2>
-          <ul class="smi__list">
-            <li class="smi__item">
-              <img src="./assets/smi/sber.png" alt="sber" class="item__img" />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
+            Целью мы ставим становление нас, неукоснительным стандартом
+            индустрии лидогенерации, для того чтобы каждый предприниматель мог
+            пользоваться нашими IT-сервисами. Если наше мышление будет едино,
+            это приведет к отличным результатам, компания будет расти и
+            процветать.<br /><br />
+
+            Эти ценности и принципы нужны не для формальности. <br />
+            Это абсолютно применимые инструменты в ежедневной работе.
+            <br /><br />
+
+            В рамках каждой задачи Вы можете подбирать какой-то принцип,
+            который поможет вам работать продуктивнее.
+          </p>
+        </article>
+        <img src="./assets/mission/hand.png" alt="hand" class="mission__img" />
+      </div>
+    </section>
+    <section class="smi">
+      <div class="smi-container container">
+        <h2><span>СМИ</span> о нас</h2>
+        <ul class="smi__list">
+          <li class="smi__item">
+            <img src="./assets/smi/sber.png" alt="sber" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+          <li class="smi__item">
+            <img src="./assets/smi/rbk.png" alt="rbk" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+          <li class="smi__item">
+            <img src="./assets/smi/kommersant.png" alt="kommersant" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+          <li class="smi__item">
+            <img src="./assets/smi/hightec.png" alt="hightec" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+          <li class="smi__item">
+            <img src="./assets/smi/komsomolskaya-pravda.png" alt="komsomolskaya-pravda" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+          <li class="smi__item">
+            <img src="./assets/smi/zhazhda-kvadrdlyasajta.png" alt="zhazhda-kvadrdlyasajta" class="item__img" />
+            <a href="#">Подробнее<img src="./assets/smi/arrow.png" alt="arrow" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="differences">
+      <div class="differences-container container">
+        <h2>Значительные <span>отличия</span> нашей франшизы от остальных</h2>
+        <ul class="differences__list">
+          <li class="differences__item">
+            <b>ГАРАНТИЯ ФИН. РЕЗУЛЬТАТА ИЛИ ВЕРНЕМ ДЕНЬГИ.</b><br />(Условие в
+            договоре.)
+          </li>
+          <li class="differences__item">Нет привязки к территории;</li>
+          <li class="differences__item">Не нужны специальные знания;</li>
+          <li class="differences__item">Полностью удаленная работа;</li>
+          <li class="differences__item">
+            Никаких закупок / логистики / аренды и так далее;
+          </li>
+          <li class="differences__item">
+            Закрываем под ключ вопрос найма сотрудников и лидов.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="demand">
+      <div class="demand-container container">
+        <h2>
+          Спрос на наши услуги вырос более чем <span>в 2,5 раза</span><br />
+          с момента начала СВО 24.02.2022 года
+        </h2>
+        <div class="demand__left">
+          <p>
+            Наша компания получила значительный прирост клиентов, поскольку
+            многие предприниматели ранее продвигали свой бизнес через:
+          </p>
+          <ul class="left__social">
+            <li class="social__item">
+              <img src="./assets/social/facebook.png" alt="facebook" />
             </li>
-            <li class="smi__item">
-              <img src="./assets/smi/rbk.png" alt="rbk" class="item__img" />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
+            <li class="social__item">
+              <img src="./assets/social/youtube.png" alt="youtube" />
             </li>
-            <li class="smi__item">
-              <img
-                src="./assets/smi/kommersant.png"
-                alt="kommersant"
-                class="item__img"
-              />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
+            <li class="social__item">
+              <img src="./assets/social/tiktok.png" alt="tiktok" />
             </li>
-            <li class="smi__item">
-              <img
-                src="./assets/smi/hightec.png"
-                alt="hightec"
-                class="item__img"
-              />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
+            <li class="social__item">
+              <img src="./assets/social/google.png" alt="google" />
             </li>
-            <li class="smi__item">
-              <img
-                src="./assets/smi/komsomolskaya-pravda.png"
-                alt="komsomolskaya-pravda"
-                class="item__img"
-              />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
-            </li>
-            <li class="smi__item">
-              <img
-                src="./assets/smi/zhazhda-kvadrdlyasajta.png"
-                alt="zhazhda-kvadrdlyasajta"
-                class="item__img"
-              />
-              <a href="#"
-                >Подробнее<img src="./assets/smi/arrow.png" alt="arrow"
-              /></a>
+            <li class="social__item">
+              <img src="./assets/social/telegram.png" alt="telegram" />
             </li>
           </ul>
+          <p>и другие зарубежные системы.</p>
         </div>
-      </section>
-      <section class="differences">
-        <div class="differences-container container">
-          <h2>Значительные <span>отличия</span> нашей франшизы от остальных</h2>
-          <ul class="differences__list">
-            <li class="differences__item">
-              <b>ГАРАНТИЯ ФИН. РЕЗУЛЬТАТА ИЛИ ВЕРНЕМ ДЕНЬГИ.</b><br />(Условие в
-              договоре.)
-            </li>
-            <li class="differences__item">Нет привязки к территории;</li>
-            <li class="differences__item">Не нужны специальные знания;</li>
-            <li class="differences__item">Полностью удаленная работа;</li>
-            <li class="differences__item">
-              Никаких закупок / логистики / аренды и так далее;
-            </li>
-            <li class="differences__item">
-              Закрываем под ключ вопрос найма сотрудников и лидов.
-            </li>
-          </ul>
+        <div class="demand__right">
+          <p>
+            Сейчас же возможностей продвижения для бизнеса в России
+            значительно меньше, а значит, всё больше предпринимателей
+            испытывают сложность с продвижением бизнеса.<br /><br />
+
+            Мы поставляем целевых клиентов по САМОЙ низкой цене на рынке,
+            поэтому к нам пошел ОГРОМНЫЙ поток предпринимателей с просьбой
+            увеличить им продажи без создания сайта и без настройки РК.
+          </p>
         </div>
-      </section>
-      <section class="demand">
-        <div class="demand-container container">
-          <h2>
-            Спрос на наши услуги вырос более чем <span>в 2,5 раза</span><br />
-            с момента начала СВО 24.02.2022 года
-          </h2>
-          <div class="demand__left">
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-container container">
+        <h3>
+          Мы первые, кто из франчайзинговой компании сделал комьюинити
+          успешных партнеров, где есть нетворкинги / конференции / тренинги и
+          все партнеры налаживают деловые связи друг с другом.
+        </h3>
+      </div>
+    </section>
+    <sectioin class="diagramm">
+      <div class="diagramm-container container">
+        <h2>
+          <span>Диаграмма</span><br />
+          наших результатов
+        </h2>
+        <div class="diagramm__graphic">
+          <img src="./assets/diagramm/graphic.png" alt="graphic" />
+        </div>
+      </div>
+    </sectioin>
+    <sectioin class="cooperation">
+      <div class="cooperation-container container">
+        <h2><span>Этапы</span> сотрудничества</h2>
+        <ul class="cooperation__steps">
+          <li class="cooperation__step">
+            <h4><span>Этап №1.</span> Брифинг</h4>
             <p>
-              Наша компания получила значительный прирост клиентов, поскольку
-              многие предприниматели ранее продвигали свой бизнес через:
+              Список сайтов, посетителей которых вы хотите начать собирать;<br /><br />
+
+              Список телефонных номеров, на которые звонят ваши потенциальные
+              клиенты;<br /><br />
+
+              Сколько новых номеров потенциальных клиентов готовы обрабатывать
+              ежедневно (Мы можем настроить фильтр, что в день вы получали то
+              количество потенциальных клиентов, которое можете
+              обработать);<br /><br />
+
+              Есть ли у вас CRM-система для удобной обработки
+              данных/подключена ли туда телефония. (У нас есть готовые
+              интеграции с AmoCRM/Bitrix/Скорозвон/Открытое API. При этом, при
+              необходимости, готовы бесплатно предоставить нашу
+              CRM-систему).<br /><br />
             </p>
-            <ul class="left__social">
-              <li class="social__item">
-                <img src="./assets/social/facebook.png" alt="facebook" />
-              </li>
-              <li class="social__item">
-                <img src="./assets/social/youtube.png" alt="youtube" />
-              </li>
-              <li class="social__item">
-                <img src="./assets/social/tiktok.png" alt="tiktok" />
-              </li>
-              <li class="social__item">
-                <img src="./assets/social/google.png" alt="google" />
-              </li>
-              <li class="social__item">
-                <img src="./assets/social/telegram.png" alt="telegram" />
-              </li>
-            </ul>
-            <p>и другие зарубежные системы.</p>
-          </div>
-          <div class="demand__right">
+            <img src="./assets/cooperation/step-1.png" alt="step-1" />
+          </li>
+          <li class="cooperation__step">
+            <h4><span>Этап №2.</span> Заключение договора.</h4>
             <p>
-              Сейчас же возможностей продвижения для бизнеса в России
-              значительно меньше, а значит, всё больше предпринимателей
-              испытывают сложность с продвижением бизнеса.<br /><br />
+              Заключаем договор, где прописываем какие данные вы будете
+              получать (на основе вашего брифа).<br /><br />
 
-              Мы поставляем целевых клиентов по САМОЙ низкой цене на рынке,
-              поэтому к нам пошел ОГРОМНЫЙ поток предпринимателей с просьбой
-              увеличить им продажи без создания сайта и без настройки РК.
+              Фиксируем конкретное количество потенциальных клиентов и твердую
+              стоимость каждого контакта.
+            </p>
+          </li>
+          <li class="cooperation__step">
+            <h4>
+              <span>Этап №3.</span> Подготовка сценария общения с клиентами
+            </h4>
+            <p>
+              Мы запустили уже множество проектов и точно знаем как звонить
+              тем, кто интересовался товарами/услугами в интернете, но не
+              оставлял заявку конкретно в Вашу компанию.
+            </p>
+            <a href="#" class="btn">ПОСМОТРЕТЬ ПРИМЕРЫ ЗВОНКОВ</a>
+          </li>
+          <li class="cooperation__step">
+            <h4>
+              <span>Этап №4.</span> Начало предоставления контактов
+              потенциальных клиентов.
+            </h4>
+            <p>
+              В среднем, мы начинаем поставлять данные через 7-10 дней после
+              заключения договора. Эти данные попадают в CRM-систему и дальше
+              обрабатываются нашими/вашими сотрудниками.
+            </p>
+          </li>
+          <li class="cooperation__step">
+            <h4>
+              <span>Этап №5.</span> Оперативный обмен обратной связью и
+              корректировки
+            </h4>
+            <p>
+              На этом этапе важно передавать информацию - как именно у Вас
+              строится общение с потенциальными клиентами, чтобы можно было
+              корректировать источники предоставления данных и повышать
+              конверсию в горячих лидов.<br /><br />
+
+              (Поскольку понятно, что не каждый, кто искал информацию в
+              интернете по итогу станет вашим клиентом).
+            </p>
+          </li>
+        </ul>
+      </div>
+    </sectioin>
+    <section class="neural-network">
+      <div class="neural-network-container container">
+        <h2>Вам помогает вести бизнес <span>нейросеть</span></h2>
+      </div>
+    </section>
+    <section class="test-drive">
+      <div class="test-drive-container container">
+        <h2>Каждый может на 1 день стать франчайзи абсолютно бесплатно</h2>
+        <p>Запишитесь на бесплатный тест-драйв</p>
+        <form action="" method="post" class="test-drive__form">
+          <input type="email" required name="email" id="test-drive-email" placeholder="Ваш e-mail" />
+          <input type="tel" required name="tel" id="test-drive-tel" placeholder="+7(ХХХ)ХХХ-ХХ-ХХ" />
+          <button class="btn">Записаться на тест-драйв</button>
+        </form>
+      </div>
+    </section>
+    <section class="excursion">
+      <div class="excursion-container container">
+        <h2>Попадите на экскурсию в комнату IT-трансформации</h2>
+        <article class="excursion__content">
+          <div class="excursion__text">
+            <h3>Записывайтесь прямо сейчас</h3>
+            <p>и получите бонус «9 применений умных роботов с ИИ»</p>
+            <p class="outline">
+              Мы свяжемся с вами, чтобы выбрать удобное время для экскурсии
             </p>
           </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="about-container container">
-          <h3>
-            Мы первые, кто из франчайзинговой компании сделал комьюинити
-            успешных партнеров, где есть нетворкинги / конференции / тренинги и
-            все партнеры налаживают деловые связи друг с другом.
-          </h3>
-        </div>
-      </section>
-      <sectioin class="diagramm">
-        <div class="diagramm-container container">
-          <h2>
-            <span>Диаграмма</span><br />
-            наших результатов
-          </h2>
-          <div class="diagramm__graphic">
-            <img src="./assets/diagramm/graphic.png" alt="graphic" />
-          </div>
-        </div>
-      </sectioin>
-      <sectioin class="cooperation">
-        <div class="cooperation-container container">
-          <h2><span>Этапы</span> сотрудничества</h2>
-          <ul class="cooperation__steps">
-            <li class="cooperation__step">
-              <h4><span>Этап №1.</span> Брифинг</h4>
-              <p>
-                Список сайтов, посетителей которых вы хотите начать собирать;<br /><br />
-
-                Список телефонных номеров, на которые звонят ваши потенциальные
-                клиенты;<br /><br />
-
-                Сколько новых номеров потенциальных клиентов готовы обрабатывать
-                ежедневно (Мы можем настроить фильтр, что в день вы получали то
-                количество потенциальных клиентов, которое можете
-                обработать);<br /><br />
-
-                Есть ли у вас CRM-система для удобной обработки
-                данных/подключена ли туда телефония. (У нас есть готовые
-                интеграции с AmoCRM/Bitrix/Скорозвон/Открытое API. При этом, при
-                необходимости, готовы бесплатно предоставить нашу
-                CRM-систему).<br /><br />
-              </p>
-              <img src="./assets/cooperation/step-1.png" alt="step-1" />
-            </li>
-            <li class="cooperation__step">
-              <h4><span>Этап №2.</span> Заключение договора.</h4>
-              <p>
-                Заключаем договор, где прописываем какие данные вы будете
-                получать (на основе вашего брифа).<br /><br />
-
-                Фиксируем конкретное количество потенциальных клиентов и твердую
-                стоимость каждого контакта.
-              </p>
-            </li>
-            <li class="cooperation__step">
-              <h4>
-                <span>Этап №3.</span> Подготовка сценария общения с клиентами
-              </h4>
-              <p>
-                Мы запустили уже множество проектов и точно знаем как звонить
-                тем, кто интересовался товарами/услугами в интернете, но не
-                оставлял заявку конкретно в Вашу компанию.
-              </p>
-              <a href="#" class="btn">ПОСМОТРЕТЬ ПРИМЕРЫ ЗВОНКОВ</a>
-            </li>
-            <li class="cooperation__step">
-              <h4>
-                <span>Этап №4.</span> Начало предоставления контактов
-                потенциальных клиентов.
-              </h4>
-              <p>
-                В среднем, мы начинаем поставлять данные через 7-10 дней после
-                заключения договора. Эти данные попадают в CRM-систему и дальше
-                обрабатываются нашими/вашими сотрудниками.
-              </p>
-            </li>
-            <li class="cooperation__step">
-              <h4>
-                <span>Этап №5.</span> Оперативный обмен обратной связью и
-                корректировки
-              </h4>
-              <p>
-                На этом этапе важно передавать информацию - как именно у Вас
-                строится общение с потенциальными клиентами, чтобы можно было
-                корректировать источники предоставления данных и повышать
-                конверсию в горячих лидов.<br /><br />
-
-                (Поскольку понятно, что не каждый, кто искал информацию в
-                интернете по итогу станет вашим клиентом).
-              </p>
-            </li>
-          </ul>
-        </div>
-      </sectioin>
-      <section class="neural-network">
-        <div class="neural-network-container container">
-          <h2>Вам помогает вести бизнес <span>нейросеть</span></h2>
-        </div>
-      </section>
-      <section class="test-drive">
-        <div class="test-drive-container container">
-          <h2>Каждый может на 1 день стать франчайзи абсолютно бесплатно</h2>
-          <p>Запишитесь на бесплатный тест-драйв</p>
-          <form action="" class="test-drive__form">
-            <input
-              type="email"
-              name="test-drive-email"
-              id="test-drive-email"
-              placeholder="Ваш e-mail"
-            />
-            <input
-              type="tel"
-              name="test-drive-tel"
-              id="test-drive-tel"
-              placeholder="+7(ХХХ)ХХХ-ХХ-ХХ"
-            />
-            <button class="btn">Записаться на тест-драйв</button>
+          <form action="" method="post" class="excursion__form">
+            <input type="email" required name="email" id="test-drive-email" placeholder="Ваш e-mail" />
+            <input type="tel" required name="tel" id="test-drive-tel" placeholder="+7(ХХХ)ХХХ-ХХ-ХХ" />
+            <button class="btn">ЗАПИСАТЬСЯ</button>
+            <p>
+              Я соглашаюсь с политикой обработки персональных данных
+            </p>
           </form>
-        </div>
-      </section>
-      <section class="excursion">
-        <div class="excursion-container container">
-          <h2>Попадите на экскурсию в комнату IT-трансформации</h2>
-          <article class="excursion__content">
-            <div class="excursion__text">
-              <h3>Записывайтесь прямо сейчас</h3>
-              <p>и получите бонус «9 применений умных роботов с ИИ»</p>
-              <p class="outline">
-                Мы свяжемся с вами, чтобы выбрать удобное время для экскурсии
-              </p>
-            </div>
-            <form action="" class="excursion__form">
-              <input
-                type="email"
-                name="test-drive-email"
-                id="test-drive-email"
-                placeholder="Ваш e-mail"
-              />
-              <input
-                type="tel"
-                name="test-drive-tel"
-                id="test-drive-tel"
-                placeholder="+7(ХХХ)ХХХ-ХХ-ХХ"
-              />
-              <button class="btn">ЗАПИСАТЬСЯ</button>
-              <p>
-                  Я соглашаюсь с политикой обработки персональных данных
-              </p>
-            </form>
-          </article>
-        </div>
-      </section>
-    </main>
-  </body>
-  <script src="./script.js"></script>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./script.js"></script>
+
 </html>
